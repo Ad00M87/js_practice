@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Image Slider</title>
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="gutters">
+      <div class="container">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 6</div>
+          <img src="./images/one.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+          <img src="./images/two.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+          <img src="./images/three.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+          <img src="./images/four.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+          <img src="./images/five.jpg" style="width:100%">
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+          <img src="./images/six.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="./images/one.jpg" style="width:100%" onclick="currentSlide(1)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/two.jpg" style="width:100%" onclick="currentSlide(2)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/three.jpg" style="width:100%" onclick="currentSlide(3)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/four.jpg" style="width:100%" onclick="currentSlide(4)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/five.jpg" style="width:100%" onclick="currentSlide(5)">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./images/six.jpg" style="width:100%" onclick="currentSlide(6)">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
