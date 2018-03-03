@@ -1,20 +1,21 @@
 import React from 'react';
-import pic1 from '../images/one.jpg';
-import pic2 from '../images/two.jpg';
-import pic3 from '../images/three.jpg';
-import pic4 from '../images/four.jpg';
-import pic5 from '../images/five.jpg';
-import pic6 from '../images/six.jpg';
+
+function importAll(r) {
+  let images = [];
+  r.map((item, index) => { images[index] = item; });
+  return images;
+}
+
+const images = importAll(require.context('../images', false, '/.jpg/'));
 
 class Slider extends React.Component {
   state = {
-    picture: 1,
+    picture: 0,
   }
-
   render() {
     return(
       <div style={styles.container}>
-        <img style={styles.mainImage} src={pic2} />
+        <img style={styles.mainImage} src={images[this.state.picture]} />
       </div>
     )
   }
