@@ -85,7 +85,8 @@ const styles = {
     alignItems: 'center',
   },
   buttonFont: {
-    fontSize: 30,
+    fontSize: 50,
+    height: '600px',
   },
   thumbRow: {
     display: 'flex',
